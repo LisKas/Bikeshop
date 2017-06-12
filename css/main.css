@@ -95,12 +95,12 @@ textarea {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-body{
-  width:1920px;
-}
+
 
 .container {
-  max-width: 1900px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left:10px;
   padding-right:10px;
 
@@ -111,9 +111,10 @@ body{
 .home {
   background-image: url("../img/thebikeshop.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   padding-top: 30px;
-  padding-bottom: 275px;
+  padding-bottom: 295px;
   position: relative;
 
 }
@@ -122,21 +123,18 @@ body{
   position: absolute;
   background-color: rgba(54, 8, 8, .3 );
   width: 100%;
-  height: 977px;
+  height: 100%;
   top: 0;
   left: 0;
 }
 
 .logo{
   float: left;
-  margin-left: 380px;float: left;
-  margin-left: 380px;
   z-index: 1;
   position: absolute;
 }
 .nav{
   margin: 0;
-  margin-right:380px;
   padding: 0;
   list-style-type: none;
   float: right;
@@ -144,10 +142,8 @@ body{
 }
 .nav li{
   display: inline-block;
-  
-
-
 }
+
 .nav a{
   display: block;
   text-decoration: none;
@@ -155,7 +151,7 @@ body{
   padding: 15px 12px;
   font-weight: bold;
 }
-.nav a:hover {
+.nav li:hover a {
   background-color: #fcff19;
   border-radius: 10px 10px 0 0;
   color: #000000;
@@ -182,10 +178,9 @@ body{
 .nav li:hover .subnav{
   display: block;
   border-radius: 0 10px 10px 10px;
-  
 }
 
-a.icon-basket:hover {
+.nav .icon-basket:hover {
   background-color:transparent;
    border-radius: 0;
    color:#fff;
@@ -210,7 +205,7 @@ a.icon-basket:hover {
     outline: none;
 }
 .black-button{
-  padding:17px 35px;
+  padding: 10px 35px;
   display:inline-block;
   background-color: #000;
   font-size: 12px;
@@ -282,6 +277,7 @@ a.icon-basket:hover {
 
 .categories{
   background-image: url('../img/bg_categories.png');
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -377,14 +373,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
 /*///////////////////////////////////////////////////////////////////*/
 
 .gallery {
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .bike-card {
   float: left;
   width: 33.33%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bike-card img{
@@ -393,7 +389,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
 
 .price {
   float:left;
-  margin-right: 200px;
+  margin-right: 30px;
 }
 
 .price span {
@@ -410,11 +406,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
 .option {
   display:inline-block;
   border-radius:10px;
-  padding:15px 20px;
+  padding: 10px 15px;
   font-size:12px;
   border: 1px solid #ddd;
   position: relative;
-  margin-right: 10px;
+  
 }
 
 .option a{
@@ -430,6 +426,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
 .option li{
   display: inline-block;
 }
+.icon-down-open-1{
+  cursor: pointer;
+}
 .selection{
   display: none;
   position: absolute;
@@ -437,7 +436,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
   border: 1px solid #ddd;
   border-top: transparent;
   border-radius: 0 0 10px 10px;
-  top: 40px;
+  top: 30px;
   left: -1px;
   right: -1px;
   
@@ -456,6 +455,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4daebf76', e
   background-image: url('../img/bg_cont.png');
   text-align: center;
   padding-bottom:83px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts h2 {
@@ -532,7 +533,8 @@ textarea:focus {
 /*///////////////////////////////////////////////////////////////*/
 
 .footer{
-  background-color: #fcff19;;
+  background-color: #fcff19;
+
 }
 
 .footer img {
@@ -548,7 +550,7 @@ textarea:focus {
 
 }
 
-.nav-footer a:hover {
+.nav-footer li:hover a {
   background-color: #fff;
   border-radius: 0 0 10px 10px;
 }
